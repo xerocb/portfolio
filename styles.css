@@ -2,13 +2,11 @@
 html,
 body {
     margin: 0px;
-    background-color: beige;
+    background-color: #daebf2;
 }
 
-main,
-footer {
-    position: relative;
-    top: 81px;
+main {
+    margin-top: 116px;
 }
 
 a {
@@ -24,14 +22,41 @@ ul {
     list-style-type: square;
 }
 
+h1 {
+    font-weight: 1000;
+    font-size: 40px;
+    font-family: Bahnschrift, sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 35px;
+    font-family: Bahnschrift, sans-serif;
+}
+
+p,
+li {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:target {
+    display: block;
+    position: relative;
+    top: -116px;
+    visibility: hidden;
+}
+
 /* Nav */
 nav {
     display: flex;
     align-items: center;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 100;
-    background-color: beige;
+    background-color: #daebf2;
 }
 
 nav h1 {
@@ -57,31 +82,40 @@ main {
     padding: 0 1%;
 }
 
-#about {
+#about-content {
     display: flex;
     align-items: center;
+    border: 3px solid black;
+    border-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#about-content .minor {
+    border-top-right-radius: 20px;
 }
 
 .major {
     flex: 7 1 0;
-    background-color: darkgray;
     padding: 0 1%;
 }
 
 .minor {
     flex: 3 1 0;
     padding: 0 1%;
-    background-color: lightgray;
+    background-color: #b0deed;
     align-self: stretch;
 }
 
 /* Projects */
-#projects {
-    background-color: gray;
+#projects-content {
     padding: 1% 1%;
+    border: 3px solid black;
+    border-top: 0;
+    border-bottom: 0;
 }
 
-#projects h2 {
+#projects-content h2 {
     text-align: center;
 }
 
@@ -91,4 +125,19 @@ footer {
     padding: 0 1%;
 }
 
-/* Responsive width = 490-491px */
+#contact-content,
+#skills-content {
+    border-bottom: 3px solid black;
+}
+
+#contact-content {
+    border-left: 3px solid black;
+    border-bottom-left-radius: 20px;
+}
+
+#skills-content {
+    border-right: 3px solid black;
+    border-bottom-right-radius: 20px;
+}
+
+/* Responsive width =  */
