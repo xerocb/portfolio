@@ -77,6 +77,26 @@ nav li {
     padding: 0 2%;
 }
 
+/* Dark/Light Mode Button */
+#button {
+    width: 10%;
+    min-width: 120px;
+}
+
+#button div {
+    background-color: #b0deed;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #0b0052;
+}
+
+#button div:hover {
+    background-color: #0b0052;
+    color: white;
+    cursor: pointer;
+}
+
 /* About */
 main {
     padding: 0 1%;
@@ -140,4 +160,4 @@ footer {
     border-bottom-right-radius: 20px;
 }
 
-/* Responsive width =  */
+/* Responsive width =  780px */
