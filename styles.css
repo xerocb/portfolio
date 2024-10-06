@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-    color: darkgray;
+    font-weight: bolder;
 }
 
 ul {
@@ -92,8 +92,7 @@ nav li {
 }
 
 #button div:hover {
-    background-color: #0b0052;
-    color: white;
+    font-weight: bolder;
     cursor: pointer;
 }
 
@@ -161,3 +160,50 @@ footer {
 }
 
 /* Responsive width =  780px */
+@media screen and (max-width: 780px) {
+    #button,
+    #about-content .minor,
+    #skills-content,
+    #skills-link {
+        display: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #projects-content {
+        background-color: #b0deed;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    #contact-content {
+        border-right: 3px solid black;
+        border-bottom-right-radius: 20px;
+        background-color: #daebf2;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    nav li {
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: 63px;
+    }
+
+    :target {
+        display: block;
+        position: relative;
+        top: -63px;
+        visibility: hidden;
+    }
+}
