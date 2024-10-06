@@ -1,13 +1,8 @@
 /* Global */
 html,
 body {
-    margin-top: 0px;
-}
-
-header,
-main,
-footer {
-    border: 1px solid black;
+    margin: 0px;
+    background-color: beige;
 }
 
 main,
@@ -16,40 +11,84 @@ footer {
     top: 81px;
 }
 
-/* Header */
-header {
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* Nav */
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 99%;
+    width: 100%;
     z-index: 100;
-    background-color: white;
+    background-color: beige;
 }
 
-header li {
+nav h1 {
+    padding-left: 1%;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    flex: auto;
+    justify-content: right;
+    padding-right: 1%;
+}
+
+nav li {
     display: inline-block;
+    padding: 0 2%;
 }
 
-/* Main */
+/* About */
+main {
+    padding: 0 1%;
+}
+
 #about {
     display: flex;
     align-items: center;
 }
 
 .major {
-    flex: 3 1 0;
+    flex: 7 1 0;
+    background-color: darkgray;
+    padding: 0 1%;
 }
 
 .minor {
-    flex: 2 1 0;
+    flex: 3 1 0;
+    padding: 0 1%;
+    background-color: lightgray;
+    align-self: stretch;
 }
 
-img {
-    width: 100%;
+/* Projects */
+#projects {
+    background-color: gray;
+    padding: 1% 1%;
+}
+
+#projects h2 {
+    text-align: center;
 }
 
 /* Footer */
 footer {
     display: flex;
+    padding: 0 1%;
 }
+
+/* Responsive width = 490-491px */
