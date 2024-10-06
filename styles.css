@@ -48,3 +48,8 @@ header li {
 img {
     width: 100%;
 }
+
+/* Footer */
+footer {
+    display: flex;
+}
